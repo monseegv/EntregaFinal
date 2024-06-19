@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Russo+One&display=swap');
+
+body{
+    background-color: white;
+}
+
+header#titulo {
+    text-align: center;
+    padding: 20px 0;
+}
+
+header {
+    background-image: url('../imagen/abstracto.jpeg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+
+}
+
+.trabajos {
+    margin-bottom: 20px;
+    background-color: white;
+    color: black;
+    text-align: left;
+}
+
+.trabajos h3 {
+    font-family: "Roboto Mono", sans-serif;
+    font-size: large;
+    margin: 0;
+    color: black;
+}
+
+.trabajos p {
+    font-family: "Roboto Mono", sans-serif;
+    font-size: small;
+    margin-top: 2px;
+}
+
+h1 {
+    font-family: "Roboto Mono", sans-serif;
+    font-size: x-large;
+    color: black;
+    margin: 0;
+    text-decoration: underline;
+    text-decoration-color: black;
+}
+
+.contenido p {
+    font-family: "Roboto Mono", sans-serif;
+    font-size: small;
+}
+.link {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+a.instagram {
+    display: block;
+    width: 120px;
+    height: 20px;
+    font-family: "Roboto Mono", sans-serif;
+    font-size: large;
+    padding: 5px 5px;
+    background-color: white;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    transition-property:background-color, color, transform ;
+    transition-duration: 0.3s;
+    margin-top: 10px;
+}
+
+a.instagram:hover {
+    background-color: black;
+    color: white;
+    transform: scale(1.05);
+   
+}
+h2{
+    font-family: "Roboto Mono", serif;
+}
+
+.fotos {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-around; 
+    margin-top: 20px;
+}
+
+.fotos div {
+    width: 45% ;
+    margin-bottom: 20px; 
+ 
+}
+
+.fotos img {
+    width: 100%; 
+    height: auto; 
+    display: block; 
+}
+
+#video-contenedor {
+    width: 100%;
+    padding: 3%;
+}
+#video-contenedor video {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+@keyframes movertitulo {
+    0%{
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+#trabajosrealizados {
+    animation-name: movertitulo;
+    animation-duration: 5s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+}
+
+.derechos {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: "Roboto Mono", sans-serif;
+    font-size: small;
+
+}
